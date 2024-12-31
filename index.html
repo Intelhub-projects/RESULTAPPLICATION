@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Score Input</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="print" href="printable.css"> </head>
+<body>
+    <div class="container">
+        <h1>Student Score Input</h1>
+
+        <div class="form-group">
+            <label for="class">Class:</label>
+            <select id="class">
+                <option value="">Select Class</option>
+                </select>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <select id="name">
+                <option value="">Select Name</option>
+                </select>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <select id="department">
+                <option value="">Select Department</option>
+                <option value="Science">Science</option>
+                <option value="Arts">Arts</option>
+                <option value="Commercial">Commercial</option>
+                <option value="Gold">Gold</option>
+                <option value="Diamond">Diamond</option>            
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="image">Image:</label>
+            <input type="file" id="image" accept=".png,.jpeg,.jpg">
+        </div>
+
+        <div class="form-group">
+            <label for="attendance">Attendance:</label>
+            <input type="number" id="attendance" min="0">
+        </div>
+
+        <div class="form-group">
+            <label for="comment">Performance Comment:</label>
+            <select id="comment">
+                <option value="Excellent performance.">Excellent performance.</option>
+                <option value="Very good performance.">Very good performance.</option>
+                <option value="Good performance.">Good performance.</option>
+                <option value="Fair performance.">Fair performance.</option>
+                <option value="Needs improvement.">Needs improvement.</option>
+            </select>
+        </div>
+
+        <div id="subjectScores">
+            </div>
+
+        <button id="calculate">Calculate & Save</button>
+
+        <div id="results" style="display:none;">
+            <h2>Report Card</h2>
+            <div id="reportCard"></div>
+            <p id="passwordDisplay"></p> <button id="printReport">Print Report</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

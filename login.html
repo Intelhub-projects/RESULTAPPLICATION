@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Login</h1>
+        <div id="studentLogin">
+            <label for="studentName">Student Name:</label>
+            <select id="studentName">
+                <option value="">Select Name</option>
+                </select>
+            <label for="studentPassword">Password:</label>
+            <input type="password" id="studentPassword">
+            <button id="studentLoginBtn">Login</button>
+            <p id="studentLoginMessage"></p>
+        </div>
+
+        <div id="studentResult" style="display:none;">
+            <h2>Your Result</h2>
+            <div id="studentReportCard"></div>
+            <button id="printStudentReport">Print Report</button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

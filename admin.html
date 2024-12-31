@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Page</h1>
+
+        <div id="adminAuth">
+            <label for="adminPassword">Admin Password:</label>
+            <input type="password" id="adminPassword">
+            <button id="adminLogin">Login</button>
+            <p id="loginMessage"></p>
+        </div>
+
+        <div id="adminContent" style="display:none;">
+            <button id="accessInputPage">Access Result Input Page</button>
+
+            <h2>Manage Student Names</h2>
+
+            <div id="class-forms-container">
+                </div>
+
+            <button id="saveStudentNames">Save Student Names</button>
+            <p id="saveMessage"></p>
+
+            <h2>Student Passwords</h2>
+            <table id="passwordTable">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

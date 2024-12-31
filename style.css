@@ -1,0 +1,406 @@
+/* Styles for index.html, admin.html, and login.html */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #495057;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+select, input[type="number"], input[type="file"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+#subjectScores {
+    margin-top: 25px;
+}
+
+.subject-group {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.subject-group label {
+    margin-top: 0;
+    font-size: 17px;
+}
+
+.subject-group input {
+    margin-right: 15px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#results {
+    margin-top: 40px;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#reportCard {
+    background: #fff;
+    padding: 25px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.report-header, .report-body, .report-footer {
+    margin-bottom: 20px;
+}
+
+.report-header h3 {
+    color: #28a745;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.report-header p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.subject-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.subject-table th, .subject-table td {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    text-align: left;
+}
+
+.subject-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 600;
+}
+
+.subject-table td {
+    background-color: #f8f9fa;
+}
+
+.report-footer p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+#printReport, #printStudentReport {
+    background-color: #17a2b8;
+}
+
+#printReport:hover, #printStudentReport:hover {
+    background-color: #138496;
+}
+
+#saveCSV {
+    background-color: #ffc107;
+}
+
+#saveCSV:hover {
+    background-color: #e0a800;
+}
+
+.form-group, .subject-group {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group:hover, .subject-group:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#passwordDisplay {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #28a745;
+}
+
+/* Admin Page Styles */
+#adminAuth {
+    margin-bottom: 30px;
+}
+
+#adminAuth label, #adminAuth input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#adminAuth input {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#adminLogin {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#adminLogin:hover {
+    background-color: #0056b3;
+}
+
+#loginMessage {
+    color: #dc3545;
+    margin-top: 10px;
+}
+
+#passwordTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#passwordTable th, #passwordTable td {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    text-align: left;
+}
+
+#passwordTable th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 600;
+}
+
+#passwordTable td {
+    background-color: #f8f9fa;
+}
+
+#accessInputPage {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#accessInputPage:hover {
+    background-color: #218838;
+}
+
+/* Student Login Page Styles */
+#studentLogin {
+    margin-bottom: 30px;
+}
+
+#studentLogin label, #studentLogin select, #studentLogin input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#studentLogin input, #studentLogin select {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#studentLoginBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#studentLoginBtn:hover {
+    background-color: #0056b3;
+}
+
+#studentLoginMessage {
+    color: #dc3545;
+    margin-top: 10px;
+}
+
+#studentResult {
+    margin-top: 40px;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#studentReportCard {
+    background: #fff;
+    padding: 25px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+#saveMessage {
+    color: #28a745;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .subject-group input {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .subject-group label {
+        font-size: 16px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body * {
+        visibility: hidden; /* Hide everything in the body */
+    }
+
+    /* Force background colors and images to be printed */
+    * {
+        -webkit-print-color-adjust: exact; /* For Chrome and Safari */
+        print-color-adjust: exact; /* For other browsers */
+    }
+
+    .container, .container * {
+        visibility: visible; /* Display only the container and its contents */
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #reportCard {
+        page-break-inside: avoid; /* Prevent the report card from breaking across pages */
+    }
+
+    #results, #reportCard, .report-header, .report-body, .report-footer {
+        display: block !important; /* Ensure these elements are visible */
+    }
+
+    h1, h2, h3 {
+        color: #000 !important; /* Ensure headings are visible */
+    }
+
+    .subject-table th {
+        background-color: #ddd !important; /* Light background for headers */
+        color: #000 !important;
+        font-weight: bold;
+    }
+
+    .subject-table td {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+
+    /* Hide form elements and buttons */
+    .form-group, button, #subjectScores, #calculate {
+        display: none;
+    }
+
+    /* Override any styles that might interfere with printing */
+    .form-group, .subject-group {
+        transform: none;
+        box-shadow: none;
+    }
+}
